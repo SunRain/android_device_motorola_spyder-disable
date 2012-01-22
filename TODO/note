@@ -20,3 +20,64 @@ kxtf9
 
 
 
+
+root@umts_spyder:/mnt/sdcard# cat /proc/partitions
+major minor  #blocks  name      alias
+
+ 179       32   15564800 mmcblk1
+ 179       33        128 mmcblk1p1
+ 179       34        512 mmcblk1p2
+ 179       35        512 mmcblk1p3
+ 179       36          1 mmcblk1p4
+ 179       37        512 mmcblk1p5
+ 179       38        512 mmcblk1p6
+ 179       39       4096 mmcblk1p7      pds
+ 179       40        512 mmcblk1p8      utags
+ 179       41       1024 mmcblk1p9
+ 179       42       2048 mmcblk1p10
+ 179       43        512 mmcblk1p11
+ 179       44        512 mmcblk1p12
+ 179       45       4096 mmcblk1p13
+ 179       46       8192 mmcblk1p14     boot
+ 179       47       9216 mmcblk1p15     recovery
+ 179       48     217088 mmcblk1p16     cdrom
+ 179       49        512 mmcblk1p17     misc
+ 179       50        512 mmcblk1p18     cid
+ 179       51       4096 mmcblk1p19     kpanic
+ 179       52     793600 mmcblk1p20     system
+ 179       53     737280 mmcblk1p21     cache
+ 179       54       9216 mmcblk1p22     preinstall
+ 179       55    1364992 mmcblk1p23     webtop
+ 179       56    3989504 mmcblk1p24     userdata
+ 179       57    8401792 mmcblk1p25     emstorage
+ 179       58        128 mmcblk1p26
+
+
+
+
+root@umts_spyder:/mnt/sdcard# cat /proc/mounts
+rootfs / rootfs ro,relatime 0 0
+tmpfs /dev tmpfs rw,relatime,mode=755 0 0
+devpts /dev/pts devpts rw,relatime,mode=600 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+none /acct cgroup rw,relatime,cpuacct 0 0
+tmpfs /mnt/asec tmpfs rw,relatime,mode=755,gid=1000 0 0
+tmpfs /mnt/obb tmpfs rw,relatime,mode=755,gid=1000 0 0
+none /dev/cpuctl cgroup rw,relatime,cpu 0 0
+/dev/block/system /system ext3 rw,noatime,nodiratime,barrier=1,data=ordered 0 0
+/dev/block/pds /pds ext3 rw,nosuid,nodev,noatime,nodiratime,errors=continue,barrier=1,data=ordered 0 0
+/dev/block/preinstall /preinstall ext3 rw,nosuid,nodev,noatime,nodiratime,errors=continue,barrier=1,data=ordered 0 0
+/dev/block/userdata /data ext3 rw,nosuid,nodev,noatime,nodiratime,errors=continue,barrier=1,data=ordered 0 0
+/dev/block/cache /cache ext3 rw,nosuid,nodev,noatime,nodiratime,errors=continue,barrier=1,data=ordered 0 0
+/dev/block/webtop /osh ext3 rw,relatime,errors=continue,barrier=0,data=ordered 0 0
+securityfs /sys/kernel/security securityfs rw,relatime 0 0
+/proc /osh/proc proc rw,relatime 0 0
+/dev/block/vold/179:57 /mnt/sdcard vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
+/dev/block/vold/179:57 /mnt/secure/asec vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
+tmpfs /mnt/sdcard/.android_secure tmpfs ro,relatime,size=0k,mode=000 0 0
+/mnt/sdcard /mnt/sdcard ecryptfs rw,dirsync,nosuid,nodev,noexec,relatime,ecryptfs_sig=bec416ed49160cdb,ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_passthrough,no_new_encrypted 0 0
+root@umts_spyder:/mnt/sdcard# 
+
+
+
