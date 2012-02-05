@@ -1,0 +1,18 @@
+ro.mot.nat_roaming_enable=1
+provision.multi.config.id=7116
+ro.multiConfig.provision.enable=1
+ro.build.config.version.app=GAS_EMEA_USASPDRRTGB_A019
+ro.product.drm.sd.enable=1
+ro.product.drm.fl.enable=1
+ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/motoxt910/Profile/motoxt910.rdf
+ro.product.drm.cd.enable=1
+ro.build.config.version=GAS_EMEA_USASPDRRTGB_P042
+ro.build.bp.config.version=USASPYDER01RUKE1030.0R
+
+ro.secure=0
+ro.allow.mock.location=0
+ro.debuggable=0
+persist.service.adb.enable=1
+
+# Forbid format of these partitions in mount menu (use only rm -r)
+ro.cwm.forbid_format=/misc,/radio,/boot,/recovery,/pds,/system,/data,/sd-ext
